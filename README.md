@@ -50,10 +50,10 @@ For Example:-
 
 Once, the webdrivers are installed, you can run the tests in browsers (Chrome, Chromium and Firefox).
 
-# Getting Started
-1. Using Selenium to write tests
-- Create a test file "firsttest.py"
-- Add the following code in the file
+# Getting Starte
+## Using Selenium to write tests
+1. Create a test file "firsttest.py"
+2. Add the following code in the file
 
 ```from selenium import webdriver 
 
@@ -61,6 +61,8 @@ Once, the webdrivers are installed, you can run the tests in browsers (Chrome, C
 driver = webdriver.Chrome() 
 driver.get("https://google.co.in") 
 ```
+3. Run the test file
+```firsttest.py```
 
 2. Walk through of the example
 
