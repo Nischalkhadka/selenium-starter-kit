@@ -51,7 +51,7 @@ Once, the webdrivers are installed, you can run the tests in browsers (Chrome, C
 
 # Getting Started
 ## Using Selenium to write tests
-1. Create a test file "firsttest.py"
+1. Create a test file "firstTest.py"
 2. Add the following code in the file
 
 ```python
@@ -62,7 +62,7 @@ driver = webdriver.Chrome()
 driver.get("https://www.lftechnology.com/") 
 ```
 3. Run the test file
-```python firsttest.py```
+```python firstTest.py```
 
 Leapfrog homepage should open in Chrome browser. 
 ## Updating the test
@@ -95,6 +95,53 @@ driver.close()
 ```
 ## Organizing the test
 
+1. Importing basic modules
+```python
+import unittest
+from selenium import webdriver
+from selenium.webdriver.common.keys import Keys
+```
+- 'unittest' module is a built-in Python based on Java's JUnit. It provides the frameworkfor organizing the test cases.
+- The 'selenium.webdriver' module provides all the Webdriver implementation.
+- The 'Keys' class provide keys in the keyboard like RETURN, F1, ALT etc.
+
+2. ```class PythonOrgSearch(unittest.TestCase):```
+- The test case class is inherited from 'unittest.TestCase'. It is the way to tell 'unittest' module that this is a test case.
+
+3. Initialization
+```python
+    def setUp(self):
+        self.driver = webdriver.Firefox()
+```
+- The setUp is the part of initialization. It will be called before every test function which we are going write in the test case class. Here we are creating the instance of Forefox Webdriver.
+
+4. Test Case
+```python
+def test_demo_user_login(self):
+driver = self.driver    
+```
+- This is the test case method. The first line inside this method createa a local reference to the driver object created in 'setUp' method.
+Note: It should always start with characters 'test'.
+
+5. Test steps:
+- Go to login form
+- Enter username
+- Enter password ahd hit enter
+- Close the browser after successful login
+
+6. Teardown method
+```python
+def tearDown(self):
+self.driver.close()
+```
+- The tearDown method will get called after every test method. In the current method, the browser window is closed.
+-  The quit will exit the entire browser, whereas close will close a tab, but if it is the only tab opened, by default most browser will exit entirely.:
+
+```python
+if __name__ == "__main__":
+    unittest.main()
+```
+These are some boiler plate code to run the test suite.
 
 # Navigating
 1. Interacting with the page
