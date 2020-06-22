@@ -65,7 +65,8 @@ driver.get("https://www.lftechnology.com/")
 ```python firsttest.py```
 
 Leapfrog homepage should open in Chrome browser. 
-## Walk through of the example
+## Updating the test
+
 
 # Navigating
 1. Interacting with the page
