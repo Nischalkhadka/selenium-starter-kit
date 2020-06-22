@@ -51,7 +51,7 @@ Once, the webdrivers are installed, you can run the tests in browsers (Chrome, C
 
 # Getting Started
 ## Using Selenium to write tests
-1. Create a test file "firstTest.py"
+1. Create a test file "firstTest.py" inside 'tests' folder.
 2. Add the following code in the file
 
 ```python
@@ -65,7 +65,7 @@ driver.get("https://www.lftechnology.com/")
 ```python firstTest.py```
 
 Leapfrog homepage should open in Chrome browser. 
-## Updating the test
+## Updating the test file 'firstTest.py'
 Example: Login in phpTravels demo app
 
 ```python
@@ -94,6 +94,8 @@ password.send_keys(Keys.RETURN)
 driver.close()
 ```
 ## Organizing the test
+
+Lets add another test file 'validLogin.py' and see how the test cases can be organized.
 
 1. Importing basic modules
 ```python
@@ -143,23 +145,12 @@ if __name__ == "__main__":
 ```
 These are some boiler plate code to run the test suite.
 
-# Navigating
-1. Interacting with the page
-2. Filling in the forms
-3. Drag and Drop
-4. Moving between the windows and frames
-5. Popup dialogs
-6. Navigation: history and location
-
-# Locating Elements
-1. Locating by Id
-2. Locating by Name
-3. Locating by XPath
-4. Locating Hyperlinks by Link Text
-5. Locating Elements by Tag Name
-6. Locating Elements by Class Name
-7. Locating Elements by CSS Selectors
-
-# Waits
-1. Explicit Waits
-2. Implicit Waits
+# References
+- [Navigating](https://selenium-python.readthedocs.io/navigating.html)
+- [Locating Elements](https://selenium-python.readthedocs.io/locating-elements.html)
+- [Waits](https://selenium-python.readthedocs.io/waits.html)
+- [Using Page Objects](https://selenium-python.readthedocs.io/page-objects.html)
+- [Switching between iframes](https://www.techbeamers.com/switch-between-iframes-selenium-python/)
+- [Handle Alerts and Pop-ups](https://www.techbeamers.com/handle-alert-popup-selenium-python/)
+- [Unittest guide](https://www.techbeamers.com/selenium-python-test-suite-unittest/#h4.1)
+- [FAQs](https://selenium-python.readthedocs.io/faq.html)
