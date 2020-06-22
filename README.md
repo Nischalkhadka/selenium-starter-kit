@@ -59,11 +59,12 @@ from selenium import webdriver
 
 #driver = webdriver.Firefox()
 driver = webdriver.Chrome() 
-driver.get("https://google.co.in") 
+driver.get("https://www.lftechnology.com/") 
 ```
 3. Run the test file
 ```python firsttest.py```
 
+Leapfrog homepage should open in Chrome browser. 
 ## Walk through of the example
 
 # Navigating
