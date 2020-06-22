@@ -42,14 +42,25 @@ In Windows:
 
 For Example:-
 
-```setx path "%path%;c:/user/eliote/Desktop/geckodriver-v0.26.0-win64/geckodriver.exe"```
+```setx path "%path%;c:/user/Nischal/Desktop/geckodriver-v0.26.0-win64/geckodriver.exe"```
 
 
 
 ### [Other driver requirements](https://www.selenium.dev/documentation/en/webdriver/driver_requirements/)
 
+Once, the webdrivers are installed, you can run the tests in browsers (Chrome, Chromium and Firefox).
+
 # Getting Started
 1. Using Selenium to write tests
+- Create a test file "firsttest.py"
+- Add the following code in the file
+
+```from selenium import webdriver 
+
+#driver = webdriver.Firefox()
+driver = webdriver.Chrome() 
+driver.get("https://google.co.in") 
+```
 
 2. Walk through of the example
 
