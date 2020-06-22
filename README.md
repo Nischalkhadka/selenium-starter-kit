@@ -11,10 +11,19 @@
 ```python setup.py install```
 
 ## Install Webdrivers
-### Download Chomedriver to drive Chrome or Chromium and put it in a folder that is on your system’s path.
-[ChromeDriver Downloads](https://sites.google.com/a/chromium.org/chromedriver/downloads)
+### Download Chomedriver to drive Chrome or Chromium
+Go to [ChromeDriver Downloads](https://sites.google.com/a/chromium.org/chromedriver/downloads). Find the latest version of the driver for your platform and download it.
 
-### Download geckodriver to drive Firefox. It works with Firefox 48 and newer.
+In Linux:
+- Extract the file
+- Make it executable
+```chmod +x chromedriver_linux64.zip```
+- Move file to usr/local/bin
+```sudo mv chromedriver_linux64.zip /usr/local/bin```
+
+### Download geckodriver to drive Firefox 
+It works with Firefox 48 and newer.
+
 
 In Linux:
 
@@ -27,7 +36,7 @@ In Linux:
 
 ```chmod +x geckodriver```
 
-- Move Files to usr/local/bin
+- Move file to usr/local/bin
 
 ```sudo mv geckodriver /usr/local/bin/```
 
@@ -50,7 +59,7 @@ For Example:-
 
 Once, the webdrivers are installed, you can run the tests in browsers (Chrome, Chromium and Firefox).
 
-# Getting Starte
+# Getting Started
 ## Using Selenium to write tests
 1. Create a test file "firsttest.py"
 2. Add the following code in the file
@@ -62,7 +71,7 @@ driver = webdriver.Chrome()
 driver.get("https://google.co.in") 
 ```
 3. Run the test file
-```firsttest.py```
+```python firsttest.py```
 
 2. Walk through of the example
 
