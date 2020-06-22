@@ -1,11 +1,16 @@
 # Installation
-Install pip
-Installation in Windows, Linux
 
-# Prerequisities
-1. Downloading Python bindings
-- Chromedriver
-- Geckodriver
+## Install Selenium library
+```pip install selenium```
+
+## Install webdriver binary
+1. Download Chomedriver to drive Chrome or Chromium and put it in a folder that is on your system’s path.
+[ChromeDriver Downloads](https://sites.google.com/a/chromium.org/chromedriver/downloads)
+
+2. Download geckodriver to drive Firefox. It works with Firefox 48 and newer.
+[Geckodriver Downloads](https://github.com/mozilla/geckodriver)
+
+3. [Other driver requirements](https://www.selenium.dev/documentation/en/webdriver/driver_requirements/)
 
 # Getting Started
 1. Using Selenium to write tests
