@@ -29,31 +29,21 @@ In Linux:
 
 - Go to [Geckodriver Downloads](https://github.com/mozilla/geckodriver). Find the latest version of the driver for your platform and download it.
 - Extract the file with:
-
 ```tar -xvzf geckodriver*```
-
 - Make it executable:
-
 ```chmod +x geckodriver```
-
 - Move file to usr/local/bin
-
 ```sudo mv geckodriver /usr/local/bin/```
 
 In Windows:
 - Download the GeckoDriver
-
 - Extract it using WinRar or any application you may have.
-
 - Add it to Path using Command Prompt
-
 ```setx path "%path%;GeckoDriver Path"```
 
 For Example:-
 
 ```setx path "%path%;c:/user/Nischal/Desktop/geckodriver-v0.26.0-win64/geckodriver.exe"```
-
-
 
 ### [Other driver requirements](https://www.selenium.dev/documentation/en/webdriver/driver_requirements/)
 
@@ -64,7 +54,8 @@ Once, the webdrivers are installed, you can run the tests in browsers (Chrome, C
 1. Create a test file "firsttest.py"
 2. Add the following code in the file
 
-```from selenium import webdriver 
+```python
+from selenium import webdriver 
 
 #driver = webdriver.Firefox()
 driver = webdriver.Chrome() 
@@ -73,7 +64,7 @@ driver.get("https://google.co.in")
 3. Run the test file
 ```python firsttest.py```
 
-2. Walk through of the example
+## Walk through of the example
 
 # Navigating
 1. Interacting with the page
